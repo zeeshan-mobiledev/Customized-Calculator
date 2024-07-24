@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.WelcomeScreen"
+    android:layout_margin="15dp"
+    >
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Add Electricity Rates"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/title"
+        android:textSize="@dimen/title" />
+
+
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Units 1 to 100"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text"
+        android:layout_below="@+id/title"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/first_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Price"
+        android:textColorHint="@color/input_hint"
+        app:boxStrokeColor="@color/input_field"
+        app:boxStrokeWidthFocused="2dp"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/input_icon_end"
+        app:hintTextColor="@color/input_field"
+        app:startIconTint="@color/input_icon_color"
+        android:layout_below="@+id/title2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/input_margin_left_right"
+        android:layout_marginRight="@dimen/input_margin_left_right"
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/price1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:textColor="@color/input_text"
+            android:textCursorDrawable="@null"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Units 101 to 500"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text"
+        android:layout_below="@+id/first_layout"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/second_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Price"
+        android:textColorHint="@color/input_hint"
+        app:boxStrokeColor="@color/input_field"
+        app:endIconMode="clear_text"
+        app:boxStrokeWidthFocused="2dp"
+        app:endIconTint="@color/input_icon_end"
+        app:hintTextColor="@color/input_field"
+        app:startIconTint="@color/input_icon_color"
+        android:layout_below="@+id/title3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/input_margin_left_right"
+        android:layout_marginRight="@dimen/input_margin_left_right"
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/price2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:textColor="@color/input_text"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/title4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Units greater than 500"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text"
+        android:layout_below="@+id/second_layout"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/third_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Price"
+        android:textColorHint="@color/input_hint"
+        app:boxStrokeColor="@color/input_field"
+        app:endIconMode="clear_text"
+        app:boxStrokeWidthFocused="2dp"
+        app:endIconTint="@color/input_icon_end"
+        app:hintTextColor="@color/input_field"
+        app:startIconTint="@color/input_icon_color"
+        android:layout_below="@+id/title4"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/input_margin_left_right"
+        android:layout_marginRight="@dimen/input_margin_left_right"
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/price3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:textColor="@color/input_text"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_submit"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_below="@+id/third_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/button_margin_left_right"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="@dimen/button_margin_left_right"
+        android:text="Save"
+        android:textColor="@color/button_text"
+        android:textSize="@dimen/button_text"
+        app:backgroundTint="@color/button_bg"
+        app:cornerRadius="@dimen/button_corner"
+        app:rippleColor="@color/button_hover" />
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.WelcomeScreen"
+    android:layout_margin="15dp"
+    >
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Welcome to Zeeshan's Bill Calculator"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/title"
+        android:textSize="@dimen/title" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_bill"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/button_margin_left_right"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="@dimen/button_margin_left_right"
+        android:text="Calculate Bill"
+        android:textColor="@color/button_text"
+        android:textSize="@dimen/button_text"
+        app:backgroundTint="@color/button_bg"
+        app:cornerRadius="@dimen/button_corner"
+        app:rippleColor="@color/button_hover" />
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_rate"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_below="@+id/btn_bill"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/button_margin_left_right"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="@dimen/button_margin_left_right"
+        android:text="Set Billing Rates"
+        android:textColor="@color/button_text"
+        android:textSize="@dimen/button_text"
+        app:backgroundTint="@color/button_bg"
+        app:cornerRadius="@dimen/button_corner"
+        app:rippleColor="@color/button_hover" />
+
+</RelativeLayout>

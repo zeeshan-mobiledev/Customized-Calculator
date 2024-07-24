@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.WelcomeScreen"
+    android:layout_margin="15dp"
+    >
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Billing Amount"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/title"
+        android:textSize="@dimen/title" />
+
+
+    <TextView
+        android:id="@+id/units"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:layout_marginLeft="15dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text"
+        android:layout_below="@+id/title"/>
+
+
+    <TextView
+        android:id="@+id/bill100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:layout_marginLeft="15dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text"
+        android:layout_below="@+id/units"/>
+
+
+    <TextView
+        android:id="@+id/bill500"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:layout_marginLeft="15dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text"
+        android:visibility="gone"
+        android:layout_below="@+id/bill100"/>
+
+
+    <TextView
+        android:id="@+id/billabove500"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:layout_marginLeft="15dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text"
+        android:layout_below="@+id/bill500"
+        android:visibility="gone"
+        />
+
+
+    <TextView
+        android:id="@+id/my_bill_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text"
+        android:layout_below="@+id/billabove500"/>
+
+    <TextView
+        android:id="@+id/my_bill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/black"
+        android:textSize="@dimen/heading"
+        android:textStyle="bold"
+        android:layout_below="@+id/my_bill_title"/>
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_submit"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_below="@+id/my_bill"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/button_margin_left_right"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="@dimen/button_margin_left_right"
+        android:text="Save Bill"
+        android:textColor="@color/button_text"
+        android:textSize="@dimen/button_text"
+        app:backgroundTint="@color/button_bg"
+        app:cornerRadius="@dimen/button_corner"
+        app:rippleColor="@color/button_hover" />
+
+</RelativeLayout>

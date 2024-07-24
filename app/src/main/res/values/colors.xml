@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!--    TEXT COLORS-->
+    <color name="title">#6960EC</color>
+    <color name="heading">#9E7BFF</color>
+    <color name="text">#000000</color>
+
+
+    <!--    Edittext fields-->
+    <color name="input_cursor">#000000</color>
+    <color name="input_field">#6960EC</color>
+    <color name="input_hint">#8c8c8c</color>
+    <color name="input_text">#000000</color>
+    <color name="input_field_selected">#6960EC</color>
+    <color name="input_icon_color">#000000</color>
+    <color name="input_icon_end">#000000</color>
+    <color name="input_not_editable">#D8D8D8</color>
+
+    <!--    BUTTONS AND EFFECTS-->
+    <color name="button_bg">#6960EC</color>
+    <color name="button_hover">#842DCE</color>
+    <color name="button_text">#FFFFFF</color>
+    <color name="button_text_link">#6960EC</color>
+
+    <color name="transparent_dark">#66000000</color>
+
+
+</resources>

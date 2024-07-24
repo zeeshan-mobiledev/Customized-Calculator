@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.WelcomeScreen"
+    android:layout_margin="15dp"
+    >
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Fill the Form"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/title"
+        android:textSize="@dimen/title" />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/consumer_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Consumer Number"
+        android:textColorHint="@color/input_hint"
+        app:boxStrokeColor="@color/input_field"
+        app:boxStrokeWidthFocused="2dp"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/input_icon_end"
+        app:hintTextColor="@color/input_field"
+        app:startIconTint="@color/input_icon_color"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="@dimen/input_margin_left_right"
+        android:layout_marginRight="@dimen/input_margin_left_right"
+        android:layout_marginTop="40dp"
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/consumer_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:textColor="@color/input_text"
+            android:textCursorDrawable="@null"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/reading_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter meter reading"
+        android:textColorHint="@color/input_hint"
+        app:boxStrokeColor="@color/input_field"
+        app:endIconMode="clear_text"
+        app:boxStrokeWidthFocused="2dp"
+        app:endIconTint="@color/input_icon_end"
+        app:hintTextColor="@color/input_field"
+        app:startIconTint="@color/input_icon_color"
+        android:layout_below="@+id/consumer_layout"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/input_margin_left_right"
+        android:layout_marginRight="@dimen/input_margin_left_right"
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/meter_reading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:textColor="@color/input_text"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_submit"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_below="@+id/reading_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/button_margin_left_right"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="@dimen/button_margin_left_right"
+        android:text="Save Bill"
+        android:textColor="@color/button_text"
+        android:textSize="@dimen/button_text"
+        app:backgroundTint="@color/button_bg"
+        app:cornerRadius="@dimen/button_corner"
+        app:rippleColor="@color/button_hover" />
+
+</RelativeLayout>
